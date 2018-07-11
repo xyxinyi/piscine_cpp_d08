@@ -3,18 +3,18 @@
 
 #include <string>
 
-class		Fruit
+class Fruit
 {
  protected:
-  std::string	_name;
-  int		_vitamins;
+	std::string _name;
+	int _vitamins;
 
  public:
-  Fruit();
-  virtual ~Fruit();
+	Fruit();
+	virtual ~Fruit();
 
-  virtual std::string		getName() const = 0;
-  int				getVitamins() const;
+	virtual std::string getName() const = 0;
+	int getVitamins() const;
 };
 
 #endif
