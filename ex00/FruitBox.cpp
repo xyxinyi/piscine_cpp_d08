@@ -1,20 +1,10 @@
-//
-// FruitBox.cpp for  in /home/daguen_s/rendu/piscine_cpp_d14m/ex00
-//
-// Made by daguen_s
-// Login   <daguen_s@epitech.net>
-//
-// Started on  Tue Jan 21 09:45:34 2014 daguen_s
-// Last update Tue Jan 21 10:06:22 2014 daguen_s
-//
-
 #include "FruitNode.h"
 #include "FruitBox.h"
 
 FruitBox::FruitBox(int size)
 {
   if (size < 0)
-    size = 0;
+	size = 0;
   this->size = size;
   this->nbFruit = 0;
   this->head_node = NULL;
