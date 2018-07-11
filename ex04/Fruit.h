@@ -21,7 +21,7 @@ class		Fruit
 
  public:
   Fruit();
-  ~Fruit();
+  virtual ~Fruit();
 
   virtual std::string		getName() const = 0;
   int				getVitamins() const;

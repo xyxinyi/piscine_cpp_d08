@@ -110,5 +110,5 @@ void	LittleHand::injectVitamin(Fruit &fruit, int quantity)
 {
   fruit = fruit;
   quantity = quantity;
-  ((InTheMatrixFruit&)fruit)._vitamins = quantity;
+  ((InTheMatrixFruit&)fruit).vitamins = quantity;
 }

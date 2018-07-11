@@ -1,13 +1,3 @@
-//
-// LittleHand.cpp for  in /home/daguen_s/rendu/piscine_cpp_d14m/ex01
-//
-// Made by daguen_s
-// Login   <daguen_s@epitech.net>
-//
-// Started on  Tue Jan 21 10:41:09 2014 daguen_s
-// Last update Tue Jan 21 20:41:29 2014 daguen_s
-//
-
 #include <iostream>
 
 #include "Fruit.h"
@@ -26,14 +16,14 @@ LittleHand::~LittleHand()
 {
 }
 
-void		LittleHand::sortFruitBox(FruitBox& unsorted, FruitBox& lemons, FruitBox& bananas, FruitBox& limes)
+void LittleHand::sortFruitBox(FruitBox& unsorted, FruitBox& lemons, FruitBox& bananas, FruitBox& limes)
 {
-  int		nb = unsorted.nbFruits();
-  int		i = 0;
-  Fruit		*f;
-  Lemon		*ptrLemon;
-  Banana	*ptrBanana;
-  Lime		*ptrLime;
+  int nb = unsorted.nbFruits();
+  int i = 0;
+  Fruit *f;
+  Lemon	*ptrLemon;
+  Banana *ptrBanana;
+  Lime *ptrLime;
 
   while (i < nb)
     {

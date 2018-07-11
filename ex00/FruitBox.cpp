@@ -4,7 +4,7 @@
 FruitBox::FruitBox(int size)
 {
   if (size < 0)
-	size = 0;
+    size = 0;
   this->size = size;
   this->nbFruit = 0;
   this->head_node = NULL;
@@ -14,22 +14,22 @@ FruitBox::~FruitBox()
 {
 }
 
-int FruitBox::getSize() const
+int		FruitBox::getSize() const
 {
   return (this->size);
 }
 
-int FruitBox::nbFruits() const
+int		FruitBox::nbFruits() const
 {
   return (this->nbFruit);
 }
 
-void FruitBox::setHead(FruitNode *h)
+void		FruitBox::setHead(FruitNode *h)
 {
   this->head_node = h;
 }
 
-bool FruitBox::putFruit(Fruit* f)
+bool		FruitBox::putFruit(Fruit* f)
 {
   FruitNode	*newFruitNode;
   FruitNode	*tmp;
@@ -54,9 +54,9 @@ bool FruitBox::putFruit(Fruit* f)
   return (false);
 }
 
-Fruit* FruitBox::pickFruit()
+Fruit*		FruitBox::pickFruit()
 {
-  Frui *f;
+  Fruit		*f;
 
   if (this->nbFruit > 0 && this->head_node != NULL)
     {
@@ -68,7 +68,7 @@ Fruit* FruitBox::pickFruit()
   return (NULL);
 }
 
-FruitNode* FruitBox::head() const
+FruitNode*	FruitBox::head() const
 {
   if (this->nbFruit > 0)
     return (this->head_node);
