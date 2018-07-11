@@ -7,10 +7,10 @@
 class Lemon : public Fruit
 {
  public:
-  Lemon();
-  ~Lemon();
+	Lemon();
+	~Lemon();
 
-  std::string	getName() const;
+	virtual std::string	getName() const;
 };
 
 #endif

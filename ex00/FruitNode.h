@@ -3,9 +3,9 @@
 
 #include "Fruit.h"
 
-typedef struct		FruitNode
+typedef struct FruitNode
 {
-  Fruit		*f;
+  Fruit *f;
   FruitNode	*next;
 } FruitNode;
 

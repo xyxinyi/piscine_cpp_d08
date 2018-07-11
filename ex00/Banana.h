@@ -6,11 +6,11 @@
 
 class Banana : public Fruit
 {
-public:
+ public:
 	Banana();
 	~Banana();
 
-	std::string getName() const;
+	virtual std::string getName() const;
 };
 
 #endif

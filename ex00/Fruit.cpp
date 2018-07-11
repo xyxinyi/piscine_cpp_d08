@@ -11,5 +11,5 @@ Fruit::~Fruit()
 
 int Fruit::getVitamins() const
 {
-  return (this->_vitamins);
+	return (this->_vitamins);
 }
