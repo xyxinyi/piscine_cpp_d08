@@ -60,9 +60,9 @@ bool FruitBox::putFruit(Fruit* f)
   return (false);
 }
 
-Fruit*		FruitBox::pickFruit()
+Fruit* FruitBox::pickFruit()
 {
-  Fruit		*f;
+  Fruit *f;
 
   if (this->nbFruit > 0 && this->head_node != NULL)
     {
@@ -74,7 +74,7 @@ Fruit*		FruitBox::pickFruit()
   return (NULL);
 }
 
-FruitNode*	FruitBox::head() const
+FruitNode* FruitBox::head() const
 {
 	if (this->nbFruit > 0)
 		return (this->head_node);

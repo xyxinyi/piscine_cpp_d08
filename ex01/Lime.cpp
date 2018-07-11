@@ -10,7 +10,7 @@ Lime::~Lime()
 {
 }
 
-std::string		Lime::getName() const
+std::string	Lime::getName() const
 {
 	return this->_name;
 }

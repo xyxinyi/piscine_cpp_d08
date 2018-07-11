@@ -4,8 +4,8 @@
 
 Lemon::Lemon() : Fruit()
 {
-  this->_name = "lemon";
-  this->_vitamins = 3;
+	this->_name = "lemon";
+	this->_vitamins = 3;
 }
 
 Lemon::~Lemon()
@@ -14,5 +14,5 @@ Lemon::~Lemon()
 
 std::string	Lemon::getName() const
 {
-  return (this->_name);
+	return (this->_name);
 }

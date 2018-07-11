@@ -1,13 +1,3 @@
-//
-// FruitBox.cpp for  in /home/daguen_s/rendu/piscine_cpp_d14m/ex00
-//
-// Made by daguen_s
-// Login   <daguen_s@epitech.net>
-//
-// Started on  Tue Jan 21 09:45:34 2014 daguen_s
-// Last update Tue Jan 21 21:16:34 2014 daguen_s
-//
-
 #include "FruitNode.h"
 #include "FruitBox.h"
 
@@ -24,22 +14,22 @@ FruitBox::~FruitBox()
 {
 }
 
-int		FruitBox::getSize() const
+int	FruitBox::getSize() const
 {
   return (this->size);
 }
 
-int		FruitBox::nbFruits() const
+int	FruitBox::nbFruits() const
 {
   return (this->nbFruit);
 }
 
-void		FruitBox::setHead(FruitNode *h)
+void FruitBox::setHead(FruitNode *h)
 {
   this->head_node = h;
 }
 
-bool		FruitBox::putFruit(Fruit* f)
+bool FruitBox::putFruit(Fruit* f)
 {
   FruitNode	*newFruitNode;
   FruitNode	*tmp;
@@ -70,9 +60,9 @@ bool		FruitBox::putFruit(Fruit* f)
   return (false);
 }
 
-Fruit*		FruitBox::pickFruit()
+Fruit* FruitBox::pickFruit()
 {
-  Fruit		*f;
+  Fruit *f;
 
   if (this->nbFruit > 0 && this->head_node != NULL)
     {
@@ -84,7 +74,7 @@ Fruit*		FruitBox::pickFruit()
   return (NULL);
 }
 
-FruitNode*	FruitBox::head() const
+FruitNode* FruitBox::head() const
 {
   if (this->nbFruit > 0)
     return (this->head_node);

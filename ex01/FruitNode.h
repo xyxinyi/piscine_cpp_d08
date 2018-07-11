@@ -5,8 +5,8 @@
 
 typedef struct FruitNode
 {
-  Fruit *f;
-  FruitNode	*next;
+	Fruit *f;
+	FruitNode	*next;
 } FruitNode;
 
 #endif

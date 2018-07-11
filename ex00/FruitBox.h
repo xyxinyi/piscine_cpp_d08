@@ -21,8 +21,8 @@ class FruitBox
 	void setHead(FruitNode *h);
 
 	bool putFruit(Fruit* f);
-	Fruit*	pickFruit();
-	FruitNode*	head() const;
+	Fruit* pickFruit();
+	FruitNode* head() const;
 };
 
 #endif 

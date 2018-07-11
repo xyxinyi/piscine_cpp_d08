@@ -1,13 +1,3 @@
-//
-// LittleHand.cpp for  in /home/daguen_s/rendu/piscine_cpp_d14m/ex01
-//
-// Made by daguen_s
-// Login   <daguen_s@epitech.net>
-//
-// Started on  Tue Jan 21 10:41:09 2014 daguen_s
-// Last update Wed Jan 22 09:32:05 2014 daguen_s
-//
-
 #include <iostream>
 
 #include "Fruit.h"
@@ -20,8 +10,8 @@
 
 typedef struct InTheMatrixFruit
 {
-  virtual	~InTheMatrixFruit();
-  int		vitamins;
+	virtual	~InTheMatrixFruit();
+	int		vitamins;
 } InTheMatrixFruit;
 
 LittleHand::LittleHand()
@@ -33,7 +23,7 @@ LittleHand::~LittleHand()
 {
 }
 
-void		LittleHand::sortFruitBox(FruitBox& unsorted, FruitBox& lemons, FruitBox& bananas, FruitBox& limes)
+void LittleHand::sortFruitBox(FruitBox& unsorted, FruitBox& lemons, FruitBox& bananas, FruitBox& limes)
 {
   int		nb = unsorted.nbFruits();
   int		i = 0;
@@ -100,15 +90,15 @@ FruitBox * const * LittleHand::organizeCoconut(Coconut const * const * coconuts_
   return box_of_coconut;
 }
 
-void	LittleHand::plugMixer(MixerBase &mixer)
+void LittleHand::plugMixer(MixerBase &mixer)
 {
-  Mixer &a = static_cast<Mixer &>(mixer);
-  a.connect();
+	Mixer &a = static_cast<Mixer &>(mixer);
+	a.connect();
 }
 
-void	LittleHand::injectVitamin(Fruit &fruit, int quantity)
+void LittleHand::injectVitamin(Fruit &fruit, int quantity)
 {
-  fruit = fruit;
-  quantity = quantity;
-  ((InTheMatrixFruit&)fruit).vitamins = quantity;
+	fruit = fruit;
+	quantity = quantity;
+	((InTheMatrixFruit&)fruit).vitamins = quantity;
 }

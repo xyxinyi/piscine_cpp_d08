@@ -3,8 +3,8 @@
 
 Banana::Banana() : Fruit()
 {
-  this->_name = "banana";
-  this->_vitamins = 5;
+	this->_name = "banana";
+	this->_vitamins = 5;
 }
 
 Banana::~Banana()
@@ -13,5 +13,5 @@ Banana::~Banana()
 
 std::string	Banana::getName() const
 {
-  return (this->_name);
+	return (this->_name);
 }

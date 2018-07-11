@@ -1,3 +1,13 @@
+//
+// LittleHand.cpp for  in /home/daguen_s/rendu/piscine_cpp_d14m/ex01
+//
+// Made by daguen_s
+// Login   <daguen_s@epitech.net>
+//
+// Started on  Tue Jan 21 10:41:09 2014 daguen_s
+// Last update Wed Jan 22 09:36:30 2014 daguen_s
+//
+
 #include <iostream>
 
 #include "Fruit.h"
