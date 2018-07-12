@@ -13,7 +13,9 @@ class FruitBox
 
  public:
 	FruitBox(int size);
+	FruitBox(const FruitBox &other) = delete;
 	~FruitBox();
+	FruitBox &operator=(const FruitBox &other) = delete;
 
 	int getSize() const;
 	int nbFruits() const;

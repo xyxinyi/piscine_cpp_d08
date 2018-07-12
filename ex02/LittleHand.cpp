@@ -66,7 +66,7 @@ FruitBox * const * LittleHand::organizeCoconut(Coconut const * const * coconuts_
     count_coconut++;
   box_of_coconut = new FruitBox*[(count_coconut / 6) + 2];
   for (i = 0; i < (count_coconut / 6) + 2; i++)
-    box_of_coconut[i] = new FruitBox[6];
+    box_of_coconut[i] = new FruitBox(6);
   i = 0;
   count_coconut = 0;
   while (coconuts_packet[count_coconut] != NULL)
